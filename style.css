@@ -10,6 +10,25 @@ a{
     color: white;
     font-size: 1rem;
 }
+/* universal styling for buttons throughout the web page */
+button{
+    font-weight: 700;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 14px;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    /* height: 2rem; */
+    border-radius: 32px;
+    width: fit-content;
+    border: 0px;
+}
+
+button:hover{
+    transform: scale(1.03);
+}
 
 .main{
     height: 100vh;
@@ -18,14 +37,16 @@ a{
 }
 .sidebar{
     width: 419px;
-    background-color: green;
+    background-color: black;
     border-radius: 1rem;
+    margin: 0.5rem;
 }
 .main_content{
     flex: 1;
     background-color: #121212;
     border-radius: 1rem;
     overflow: auto;
+    
 }
 
 .music_player{
@@ -90,12 +111,12 @@ a{
 }
 
 .library-content{
-    margin: 8px 0;
-    padding: 16px 20px;
+    padding: 0px 8px 8px 8pxx;
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .box{
@@ -106,7 +127,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
     height: 102px;
 }
 
@@ -122,6 +143,9 @@ a{
 }
 .para p{
     font-size: 14px;
+}
+.badge{
+    height: 2rem;
 }
 
 
