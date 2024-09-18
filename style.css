@@ -11,7 +11,7 @@ a{
     font-size: 1rem;
 }
 /* universal styling for buttons throughout the web page */
-button{
+.badge{
     font-weight: 700;
     box-sizing: border-box;
     background-color: white;
@@ -20,7 +20,7 @@ button{
     cursor: pointer;
     display: inline-block;
     text-align: center;
-    /* height: 2rem; */
+    height: 2rem;
     border-radius: 32px;
     width: fit-content;
     border: 0px;
@@ -39,14 +39,14 @@ button:hover{
     width: 419px;
     background-color: black;
     border-radius: 1rem;
-    margin: 0.5rem;
+    margin-right: 0.5rem;
 }
 .main_content{
     flex: 1;
     background-color: #121212;
     border-radius: 1rem;
-    overflow: auto;
-    
+    overflow: scroll;
+    padding: 0 1.5rem;
 }
 
 .music_player{
@@ -88,6 +88,7 @@ button:hover{
     height: 100%;
     margin-top: 0.5rem;
     padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
 }
 .Options{
     display: flex;
@@ -144,8 +145,113 @@ button:hover{
 .para p{
     font-size: 14px;
 }
-.badge{
-    height: 2rem;
+
+.sticky-nav{
+    position: sticky;
+    top: 0px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 10;
 }
 
+.sticky-nav-icons{
+    margin-left: 0.75rem;
+}
 
+.sticky-nav-icons img{
+    margin: 0.25rem;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-icons{
+    margin-right: 1.5rem;
+    /* height: 2.5rem; */
+}
+.black{
+    background-color: black ;
+    color: white;
+}
+.nav-icons i {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-start;
+    justify-content: space-between; */
+    margin-bottom: 2rem;
+}
+
+.card{
+    background-color: #232323;
+    width: 180px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    
+}
+.card-circle{
+    background-color: transparent;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.card-img-circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card-heading{
+    margin-left: 2rem;
+}
+
+.circle{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #232323;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  
+  

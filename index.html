@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -71,7 +72,95 @@
             </div>
 
         </div>
-        <div class="main_content">main content</div>
+        <div class="main_content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+
+                    <a href="#"><img src="/New folder/backward_icon.png" alt=""></a>
+                    <a href="#"><img src="/New folder/forward_icon.png" alt="" class="hide"></a>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-icons hide">Explore Premium</button>
+                    <button class="badge nav-icons black"><i class="fa-regular fa-circle-down"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-icons"></i>
+                </div>
+            </div>
+            <div class="Cards">
+                <h2 class="card-heading">Recently Played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="/New folder/card1img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top-50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                </div>
+                <h2 class="card-heading">Popular Artist</h2>
+                <div class="card-container">
+                    <div class="card-circle">
+                        <img src="/New folder/Pritam.png" alt="" class="card-img-circle">
+                        <p class="card-title">Pritam</p>
+                        <p class="card-info">Artist</p>
+                    </div>
+                    <div class="card-circle">
+                        <img src="/New folder/A R rehman.png" alt="" class="card-img-circle">
+                        <p class="card-title">A.R.Rahman</p>
+                        <p class="card-info">Artist</p>
+                    </div>
+                    <div class="card-circle">
+                        <img src="/New folder/sachin.png" alt="" class="card-img-circle">
+                        <p class="card-title">Sachin-Jigar</p>
+                        <p class="card-info">Artist</p>
+                    </div>
+                    <div class="card-circle">
+                        <img src="/New folder/Arijit.png" alt="" class="card-img-circle">
+                        <p class="card-title">Arijit Singh</p>
+                        <p class="card-info">Artist</p>
+                    </div>
+                    <div class="card-circle">
+                        <img src="/New folder/Anirudh.png" alt="" class="card-img-circle">
+                        <p class="card-title">Anirudh <br>Ravichander</p>
+                        <p class="card-info">Artist</p>
+                    </div>
+                    <div class="card-circle">
+                        <img src="/New folder/Atif.png" alt="" class="card-img-circle">
+                        <p class="card-title">Atif Aslam</p>
+                        <p class="card-info">Artist</p>
+                    </div>
+                    
+
+                </div>
+                <h2 class="card-heading">Popular Globally</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="/New folder/card2img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top-50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="/New folder/card4img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top-50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="/New folder/card3img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top-50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="/New folder/card1img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top-50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="/New folder/card2img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top-50 Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+
+                </div>
+                <br><br><br><br><br>
+            </div>
+        </div>
         <div class="music_player">music player</div>
     </div>
 </body>
