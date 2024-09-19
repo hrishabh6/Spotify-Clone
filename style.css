@@ -49,13 +49,7 @@ button:hover{
     padding: 0 1.5rem;
 }
 
-.music_player{
-    background-color: black;
-    position: fixed;
-    bottom: 0px;
-    height: 72px;
-    width: 100%;
-}
+
 .nav-bar{
     background-color: #121212;
     border-radius: 1rem;
@@ -199,21 +193,29 @@ button:hover{
 }
 
 .card{
-    background-color: #232323;
+    background-color: transparent;
     width: 180px;
     border-radius: 0.5rem;
     padding: 1rem;
     margin-left: 1.5rem;
-    
+    margin: 1rem;
+    transition: all 0.1s ease-in-out;
 }
+
+.card:hover, .card-circle:hover{
+    background: linear-gradient(to bottom, rgba(61, 61, 61, 0.2
+    ), rgba(35, 35, 35, 0.7));
+}
+
 .card-circle{
     background-color: transparent;
     width: 150px;
     border-radius: 0.5rem;
     padding: 1rem;
-    margin-left: 1.5rem;
-    
+    margin-left: 1.5rem;  
 }
+
+
 
 .card-img{
     width: 100%;
@@ -249,9 +251,95 @@ button:hover{
     background: #232323;
   }
 
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #888;
-  }
+}
 
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
-  
+.seperater{
+    border-top: 1px solid white;
+    width: 90%;
+    height: 30%;
+    opacity: 0.2;
+}  
+
+.music_player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.album{
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+
+}
+
+.controller{
+    width: 25%;
+    /* background-color: blue; */
+}
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin-right:1.75rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem ;
+}
+
+.progress-bar{
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    background-color: #1bd760;
+    height: 1rem;
+    width: 1rem;
+    margin: -6px;
+    border-radius: 50%;
+}
+
+.curr-time{
+    margin: 0 0.5rem;
+}
